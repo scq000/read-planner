@@ -17,6 +17,13 @@ npm run build
 # run unit tests
 npm run unit
 
+Please make sure install PhantomJS globally.
+```bash
+npm install -g phantomjs
+```
+And you should check the `.zshrc`(or '.bashrc') with ENV variable.
+```export PHANTOMJS_BIN="/usr/local/lib/node_modules/phantomjs/lib/phantom/bin/phantomjs"```
+
 # run e2e tests
 npm run e2e
 
