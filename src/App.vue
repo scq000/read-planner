@@ -1,21 +1,30 @@
 <template>
-  <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-  </div>
+<div id="app">
+  <banner></banner>
+  <progress-bar></progress-bar>
+
+
+</div>
 </template>
 
 <script>
 import Hello from './components/Hello';
+import ProgressBar from './components/ProgressBar';
+import Banner from './components/Banner';
 
 export default {
   components: {
     Hello,
+    ProgressBar,
+    Banner,
   },
 };
 </script>
 
-<style>
+<style lang="less">
+@import "assets/lib/normalize.css";
+@import "assets/less/base.less";
+
 html {
   height: 100%;
 }
@@ -28,20 +37,10 @@ body {
 }
 
 #app {
+    height: 100%;
+    width: 90%;
   color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
   font-family: Source Sans Pro, Helvetica, sans-serif;
   text-align: center;
-}
-
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
-
-.logo {
-  width: 100px;
-  height: 100px
 }
 </style>
