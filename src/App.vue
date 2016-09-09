@@ -2,21 +2,28 @@
 <div id="app">
   <banner></banner>
   <progress-bar></progress-bar>
-
+  <tabs>
+    <tab header="想读">Hello1</tab>
+    <tab header="在读">Hello2</tab>
+    <tab header="已读">Hello3</tab>
+    <tab header="笔记">Hello4</tab>
+  </tabs>
 
 </div>
 </template>
 
 <script>
-import Hello from './components/Hello';
 import ProgressBar from './components/ProgressBar';
 import Banner from './components/Banner';
+import Tabs from './components/Tabs';
+import Tab from './components/Tab';
 
 export default {
   components: {
-    Hello,
     ProgressBar,
     Banner,
+    Tabs,
+    Tab,
   },
 };
 </script>
