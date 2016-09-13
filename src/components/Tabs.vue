@@ -22,7 +22,9 @@ export default {
       tab.active = true;
     },
   },
-
+  ready() {
+    this.tabs[0].active = true;
+  },
 };
 </script>
 
