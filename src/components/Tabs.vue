@@ -1,7 +1,7 @@
 <template>
 <ul class="tabs">
   <li class="tab-header" v-for="tab of tabs" @click="selectTab(tab)">
-    <a href="#">{{tab.header}}</a>
+    <a href="#" :class="{on: tab.active}">{{tab.header}}</a>
   </li>
 </ul>
 <slot></slot>
@@ -61,9 +61,14 @@ export default {
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      color: rgba(240,95,48,0.5);
+      color: rgba(240,95,48, .5);
       cursor: pointer;
       border-bottom: 1px solid green;
+    }
+
+    &.on{
+      background: rgba(240, 95, 48, .75);
+      color: white !important;
     }
   }
 }
