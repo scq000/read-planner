@@ -20,6 +20,15 @@ export default {
       }, {
         name: '323232',
         author: '12323',
+      }, {
+        name: '323232',
+        author: '12323',
+      }, {
+        name: '323232',
+        author: '12323',
+      }, {
+        name: '323232',
+        author: '12323',
       }],
     };
   },
@@ -30,7 +39,6 @@ export default {
 <style scoped lang="less">
 @height: 800px;
 .bookshelf {
-  height: @height;
 	width: 100%;
 	display: flex;
 	border: 1px solid green;
@@ -39,9 +47,12 @@ export default {
 }
 
 .book {
-	width: 180px;
+	flex:0 0 180px;
 	height: 300px;
 	border: 1px solid red;
+	align-self: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 </style>
